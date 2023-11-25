@@ -1,0 +1,2 @@
+"use strict";window.Kar_guess=function(md5){var getPasswordMD5=function(t){return new MD5(new ArrayBuffer().fromText(t)).getString(false,false);};var checkPassword=function(t){return getPasswordMD5(t)==md5;};var d=new Date();for(var i=0;i<0x7FFFFFFF;i++){var s=i.toString();if(checkPassword(s)){alert("Guess password "+s+" hex as "+i.toString(16).toUpperCase().padStart(8,"0")+" takes "+(new Date()-d)+" ms.");return s;}}
+alert("Guess password failed from 0 to 0x7FFFFFFF!");};UpdatePluginList("kar_guess");
